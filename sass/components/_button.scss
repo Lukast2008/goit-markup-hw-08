@@ -1,0 +1,74 @@
+.btn-pos {
+    display: flex;
+  }
+  
+  .btn {
+    color: var(--main-color--);
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.87;
+    letter-spacing: 0.06em;
+    margin: 0 auto;
+    border-radius: 4px;
+    border: none;
+    display: block;
+    padding: 10px 32px;
+    background-color: var(--brand-color--);
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+    transition-property: background-color;
+    transition-duration: var(--timing);
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
+  .btn,
+  .filter-btn {
+    cursor: pointer;
+  }
+  
+  .btn:hover,
+  .btn:focus {
+    background-color: #188ce8;
+  }
+
+
+
+  .filter-buttons,
+.project-items {
+  list-style: none;
+  padding: 0px;
+}
+
+.filter-buttons {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.filter-button {
+  margin-right: 8px;
+}
+
+.filter-btn {
+  background-color: var(--back-color--);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.62;
+  letter-spacing: 0.03em;
+  text-align: center;
+  color: var(--header-color--);
+  border: none;
+  border-radius: 4px;
+  padding: 6px 25px;
+  transition-property: background-color, box-shadow, color;
+  transition-duration: var(--timing);
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.filter-btn:hover,
+.filter-btn:focus {
+  background-color: var(--brand-color--);
+  color: var(--main-color--);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
+}
