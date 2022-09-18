@@ -1,9 +1,27 @@
-.section {
-     @include section();
+.section{
+
+  @include section();
+
+  @media screen and(min-width:1200px) {
+    @include section(94px, 94px);
   }
   
-  .container {
-    margin: 0 auto;
-    width: 1200px;
-    padding: 0 15px;
+}
+
+
+.container {
+  margin: 0 auto;
+  max-width:480px;
+  padding: 0 15px;
+
+  // outline: 2px solid red;
+
+  @media screen  and (min-width:768px){
+    max-width: 768px;
   }
+
+  @media screen  and (min-width:1200px){
+    max-width:1200px;
+  }
+  
+}

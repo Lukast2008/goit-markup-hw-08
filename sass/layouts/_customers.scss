@@ -1,23 +1,49 @@
 customers {
     margin: 0 auto;
-  }
+
   
+
+   
+    
+  }
+
+
   .customers-header {
-    font-size: 36px;
-    line-height: 1.16;
+    line-height: 1.17;
     color: var(--header-color--);
     text-align: center;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
+
+    @media screen and (min-width:1200px) { 
+      font-size: 36px;
+      line-height: 1.16;
+      margin-bottom: 50px;
+    }
+
   }
   
   .customers__list {
-    display: flex;
-    gap: 30px;
-  }
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+    }
   
+ 
   .customers__item {
-    width: 170px;
     height: 92px;
+
+    flex-basis:calc((100% - 30px)/2);
+
+    @media screen  and (min-width:768px) {
+      width: 226px;
+      flex-basis:calc((100% - 60px)/3);
+      
+    }
+
+    @media screen  and (min-width:1200px) {
+      width: 170px;
+      flex-basis:calc((100% - 150px)/6);
+    }
   }
   
   .customers__website {

@@ -1,6 +1,9 @@
 .subscribe {
-    margin-left: 93px;
     width: 100%;
+
+    @media screen and (min-width:1200px) {
+       margin-left: 93px;
+    }
   }
   
   .subscribe-siпature {
@@ -12,8 +15,11 @@
   }
   
   .form__mail {
-    display: flex;
     margin-top: 20px;
+
+    @media screen and (min-width:1200px) {
+      display: flex;
+    }
   }
   
   .subscribe_field {
@@ -23,7 +29,18 @@
     border: 1px solid rgba(255, 255, 255, 0.3);
     color: var(--main-color--);
     border-radius: 4px;
-    width: 358px;
+    margin-bottom: 20px;
+    width: 100%;
+    @media screen and (min-width:768px){
+      width: 450px;
+      
+    }
+
+    @media screen and (min-width:1200px){
+
+      width: 358px;
+    }
+    
     font-size: 16px;
     line-height: 1.25;
     letter-spacing: 0.03em;
@@ -49,7 +66,9 @@
   .btn_footer {
     display: flex;
     align-items: center;
-    margin-left: 12px;
+    @media screen and (min-width:1200px) {
+      margin-left: 12px;
+    }
     width: 200px;
     height: 50px;
   }

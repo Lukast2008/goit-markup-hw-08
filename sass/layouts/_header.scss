@@ -4,6 +4,11 @@
   border-bottom-style: solid;
   border-bottom-color: #ececec;
 
+  @media screen and (max-width:768px) {
+    padding: 10px;
+  }
+  
+
   &__container {
     display: flex;
     align-items: center;

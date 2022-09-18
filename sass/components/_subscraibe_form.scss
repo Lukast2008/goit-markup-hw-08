@@ -27,8 +27,18 @@
     top: 50%;
     left: 50%;
     transform: translateX(-50%) translateY(-50%);
-    width: 528px;
-    height: 581px;
+
+
+    width: 450px;
+
+
+    
+
+    @media screen and (min-width:1200px) {
+      width: 528px;
+    }
+
+    
     background-color: var(--main-color--);
     border-radius: 4px;
   }
@@ -67,7 +77,13 @@
     display: block;
     font-weight: 700;
     font-size: 20px;
-    line-height: 1.15;
+    line-height: 1.5;
+    @media screen and (min-width:1200px) {
+      line-height: 1.15;
+    }
+   
+
+
     text-align: center;
     letter-spacing: 0.03em;
     color: #212121;
@@ -147,15 +163,26 @@
   }
   
   .check-lb {
-    font-size: 14px;
-    line-height: 1.71Q;
+    
+    font-size: 12px;
+    line-height: 1.17;
     letter-spacing: 0.03em;
     color: #757575;
+    
+    @media screen and (min-width:1200px) {
+      
+      font-size: 14px;
+      line-height: 1.71;
+
+    }
   }
+
   
   .form-checkbox {
     visibility: hidden;
     height: 0;
+    position: absolute;
+    left: 0;
   }
   
   .form-checkbox:checked + .check-icon .icon-uncheck {
@@ -165,6 +192,8 @@
   
   .icon-check {
     opacity: 0;
+    display: flex;
+  
   }
   .form-checkbox:checked + .check-icon .icon-check {
     opacity: 1;
@@ -183,8 +212,9 @@
     align-items: center;
     justify-content: center;
     padding-bottom: 30px;
-    text-align: center;
+    letter-spacing: 0.03em;
     gap: 8px;
+    text-align: left;
     user-select: none;
   }
   

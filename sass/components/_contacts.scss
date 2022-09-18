@@ -1,37 +1,74 @@
 .contacts {
-  display: flex;
-  margin-left: auto;
-  gap: 50px;
+
+  display: none;
+
+  @media screen and(min-width:768px)  {
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    
+  }
+
+  @media screen and(min-width:1200px){
+    display: flex;
+    flex-direction:row;
+    margin-left: auto;
+    gap: 50px;
+  }
+ 
+ 
 }
 
 .contacts__item {
     list-style: none;
     display: flex;
+
   }
   
   .contacts__mail{
-    font-size: 14px;
+
     font-weight: 500;
     line-height: 1.172;
     letter-spacing: 0.02em;
     text-decoration: none;
-    color: var(--description-color--);
-    padding: 32px 0;
+    color: var(--description-color--);  
+
     display: flex;
     align-items: center;
     transition-property: color, fill;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     transition-duration: var(--timing);
+
+    @media screen and (min-width:768px) {
+      font-size: 12px;  
+      
+    }
+
+    @media screen and (min-width:768px) and (max-width:1199px){
+      margin-bottom: 10px;
+    }
+
+
+    @media screen and (min-width:1200px) {
+      font-size: 14px;  
+      padding: 32px 0;
+    }
   }
 
   .contacts__icon {
-    width: 16px;
-    height: 12px;
+    width:14px;
+    height: 10px;
     margin-right: 10px;
     fill: var(--description-color--);
     transition-property: color, fill;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    transition-duration: var(--timing)
+    transition-duration: var(--timing);
+
+    @media screen and (min-width:1200px) {
+      width: 16px;
+      height: 12px;
+    }  
+
   }
   
   .contacts__mail:hover .contacts__icon,
@@ -46,17 +83,26 @@
     letter-spacing: 0.02em;
     text-decoration: none;
     color: var(--description-color--);
-    padding: 32px 0;
+    
     display: flex;
     align-items: center;
     transition-property: color, fill;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     transition-duration: var(--timing);
+
+    @media screen and (min-width:1200px) {
+      padding: 32px 0;
+    }
   }
   
   .icon-f {
     width: 10px;
-    height: 16px;
+    height: 14px;
+
+    @media screen and (min-width:1200px) {
+      width: 10px;
+      height: 16px;
+    }
   }
   
   .contacts__phone:focus .icon-f,

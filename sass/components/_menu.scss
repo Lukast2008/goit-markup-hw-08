@@ -1,0 +1,137 @@
+.menu-btn{
+    height: 40px;
+    width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    background-color: transparent;
+    margin-left: auto;
+    padding: 0;
+
+    transition-property: fill;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: var(--timing);
+
+   @media screen and (min-width:480px){
+   } 
+   
+    @media screen and (min-width:768px) {
+        display: none;
+    }
+
+    &:active .menu-btn-icon{
+     fill:  #2196F3 ;
+   }
+}
+   
+.menu-btn-icon{
+    fill: currentColor;
+}
+
+.menu-container{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    padding: 48px 40px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04),
+    0px 2px 4px rgba(0, 0, 0, 0.08),
+    0px 1px 3px rgba(0, 0, 0, 0.16);
+    transform: translateX(100%);
+    transition: transform var(--timing);
+
+    display: flex;
+    flex-direction: column;
+
+    &.is-open{
+        transform: translateX(0);
+    }
+}
+
+.menu-toggle{
+    position: absolute;
+    top: 10px;
+    right: 15px;
+}
+
+.menu-nav{
+    display:flex ;
+    flex-direction: column;
+    margin-bottom: auto;
+    gap: 30px;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 1.17;
+    letter-spacing: 00.02em;
+
+    &-link{
+        color: var(--header-color--) ;
+        transition-property: color;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        transition-duration: var(--timing) ;   
+    }
+
+    &-link:hover,
+    &-link:focus {
+        text-align: center;
+        color:  var(--brand-color--)  ;
+    }
+
+}
+
+
+.mobile__list{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 64px;
+    gap: 32px;
+    font-size:  24px ;
+
+    &-link{
+    color: var(--header-color--);
+    transition-property: color  text-transform ;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: var(--timing) ;   
+    }
+
+    &-link:hover,
+    &-link:focus{
+    color: var(--brand-color--);
+    font-size: 34px;
+    
+}
+
+}
+
+.menu-social{
+    display: flex;
+    margin: 0 -15px;
+
+    &-item{
+        margin: 0;
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 1.21;
+        letter-spacing: 00.02em;
+        color: #2196F3;
+        cursor: pointer;
+        
+    }
+
+    &-item:not(:first-child){
+        border-left: 1px solid rgba(33, 33, 33, 0.2);  
+    } 
+
+    &-link {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+}
+
+
+
+ 
+
