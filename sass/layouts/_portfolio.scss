@@ -1,13 +1,9 @@
-.portfproject-itemolio {
-    margin: 0 auto;
-  }
-  
   .filter-heading {
     visibility: hidden;
     height: 0;
   }
 
-  .project-items {
+  .projects{
     display: flex;
     flex-direction: column;
     gap: 30px;
@@ -23,22 +19,26 @@
       
       flex-basis:calc((100% - 60px)/3)
     }
+
+
+    &-item:first-child &-border{
+      @media screen and (min-width:768px) and (max-width:1199px){
+        padding-bottom: 56px;
+      }
+    }
+
     
   }
 
 
-  .project-item:first-child .project-border{
-    @media screen and (min-width:768px) and (max-width:1199px){
-      padding-bottom: 56px;
-    }
-  }
+  
 
 
-  .project-link {
+  .projects__link {
     display: block;
   }
   
-  .project-item {
+  .projects__item {
 
   
     width: 100%;
@@ -81,25 +81,25 @@
     transition-duration: var(--timing);
   }
   
-  .project-link:hover,
-  .project-link:focus {
+  .projects__link:hover,
+  .projects__link:focus {
     box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16),
       0 4px 4px 0 rgba(0, 0, 0, 0.06), 0 1px 1px 0 rgba(0, 0, 0, 0.12);
   }
   
-  .project-link:hover .overlay,
-  .project-link:focus .overlay {
+  .projects__link:hover .overlay,
+  .projects__link:focus .overlay {
     transform: translateY(0);
   }
   
-  .project-border {
+  .projects__border {
     border: 1px solid #eeeeee;
     border-top: none;
     padding: 20px 24px;
   }
 
 
-  .project-name {
+  .projects__name {
     font-size: 18px;
     font-weight: 700;
     line-height: 2;
@@ -107,7 +107,7 @@
     color: var(--header-color--);
   }
   
-  .project-type {
+  .projects__type {
     font-size: 16px;
     line-height: 1.87;
     letter-spacing: 0.03em;

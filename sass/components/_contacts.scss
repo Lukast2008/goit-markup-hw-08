@@ -38,9 +38,9 @@
     transition-property: color, fill;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     transition-duration: var(--timing);
-
+    font-size: 12px; 
     @media screen and (min-width:768px) {
-      font-size: 12px;  
+      
       
     }
 
@@ -63,7 +63,7 @@
     transition-property: color, fill;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     transition-duration: var(--timing);
-
+    
     @media screen and (min-width:1200px) {
       width: 16px;
       height: 12px;
@@ -77,13 +77,13 @@
   }
   
   .contacts__phone{
-    font-size: 14px;
+    
     font-weight: 500;
     line-height: 1.17;
     letter-spacing: 0.02em;
     text-decoration: none;
     color: var(--description-color--);
-    
+    font-size: 12px;
     display: flex;
     align-items: center;
     transition-property: color, fill;
@@ -92,6 +92,7 @@
 
     @media screen and (min-width:1200px) {
       padding: 32px 0;
+      font-size: 14px;
     }
   }
   
