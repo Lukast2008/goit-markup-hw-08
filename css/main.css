@@ -1454,6 +1454,12 @@ customers {
   }
 }
 
+@media screen and (max-width: 767px) {
+  .footers-social {
+    margin-top: 60px;
+  }
+}
+
 .link-addres {
   font-style: normal;
   display: -webkit-box;
@@ -1528,11 +1534,6 @@ customers {
   letter-spacing: 0.03em;
   text-transform: uppercase;
 }
-@media screen and (min-width: 480px) {
-  .social-header {
-    margin-top: 60px;
-  }
-}
 @media screen and (min-width: 768px) {
   .social-header {
     margin-top: 0;
@@ -1546,20 +1547,16 @@ customers {
   display: flex;
   gap: 10px;
   margin-bottom: 60px;
+  margin-top: 20px;
 }
 @media screen and (max-width: 767px) {
   .social-link {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    margin-top: 20px;
   }
 }
-@media screen and (min-width: 768px) {
-  .social-link {
-    margin-top: 20px;
-  }
-}
+
 .link-social {
   background-color: rgba(255, 255, 255, 0.1);
 }

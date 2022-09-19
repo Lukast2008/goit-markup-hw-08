@@ -33,7 +33,11 @@
     
   }
 
-
+  .footers-social{
+    @media screen and (max-width:767px){
+      margin-top: 60px;
+    }
+  }
 
   .link-addres {
     font-style: normal;
@@ -97,10 +101,6 @@
     color: var(--main-color--);
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    
-    @media screen and (min-width:480px) {
-      margin-top: 60px;
-    }
 
     @media screen and (min-width:768px) {
       margin-top: 0;
@@ -113,17 +113,10 @@
     display: flex;
     gap: 10px;
     margin-bottom: 60px;
+    margin-top: 20px;
 
     @media screen and (max-width:767px){
       justify-content: center;
-      margin-top: 20px;
-    }
-
-    @media screen and (min-width:768px){
-      margin-top: 20px;
-    }
-
-    @media screen and (min-width:1200px){
       
     }
 
