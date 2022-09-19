@@ -17,7 +17,7 @@
       href="./modern-normalize-main/modern-normalize.css"
     />
 
-    <link rel="stylesheet" href="./css/main.min.css">
+    <link rel="stylesheet" href="./css/main.min.css" />
   </head>
 
   <body>
@@ -34,7 +34,9 @@
             </li>
 
             <li class="nav__item">
-              <a class="nav__link nav__link--current"  href="./portfolio.html">Портфоліо</a>
+              <a class="nav__link nav__link--current" href="./portfolio.html"
+                >Портфоліо</a
+              >
             </li>
 
             <li class="nav__item">
@@ -64,14 +66,16 @@
           </li>
         </ul>
 
-        <button class="menu-btn js-open-menu" type="button" 
+        <button
+          class="menu-btn js-open-menu"
+          type="button"
           aria-expanded="false"
-          aria-controls="mobile-menu">
-          <svg  class="menu-btn-icon" width="40px" height="40px">
+          aria-controls="mobile-menu"
+        >
+          <svg class="menu-btn-icon" width="40px" height="40px">
             <use href="./images/icons.svg#menu"></use>
           </svg>
         </button>
-
       </div>
     </header>
 
@@ -109,12 +113,42 @@
             <li class="projects__item">
               <a class="projects__link" href="">
                 <div class="img-bloc">
-                  <img
-                    class="img"
-                    src="./images/p1.jpg"
-                    alt="Лептоп "
-                    width="370"
-                  />
+                  <picture>
+                    <!--  Desk  -->
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/portfolio/desk-1.jpg    1x,
+                        ./images/portfolio/desk-1@2x.jpg 2x
+                      "
+                    />
+
+                    <!--  tablet  -->
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/portfolio/tab-1.jpg    1x,
+                        ./images/portfolio/tab-1@2x.jpg 2x
+                      "
+                    />
+
+                    <!--  mobile  -->
+                    <source
+                      media="(max-width:767px)"
+                      srcset="
+                        ./images/portfolio/img-mob-1.jpg    1x,
+                        ./images/portfolio/img-mob@2x-1.jpg 2x
+                      "
+                    />
+
+                    <img
+                      class="img"
+                      src="./images/portfolio/img-mob-1.jpg "
+                      alt="Лептоп "
+                      width="370"
+                    />
+                  </picture>
+
                   <p class="overlay">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
                     функціоналу та сервісів. Все це дозволить відвідувачу
@@ -132,12 +166,41 @@
             <li class="projects__item project-position">
               <a class="projects__link" href="">
                 <div class="img-bloc">
-                  <img
-                    class="img"
-                    src="./images/p2.jpg"
-                    alt="Дврє грають в баскетбол"
-                    width="370"
-                  />
+                  <picture>
+                    <!--  Desk  -->
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/portfolio/desk-2.jpg    1x,
+                        ./images/portfolio/desk-2@2x.jpg 2x
+                      "
+                    />
+
+                    <!--  tablet  -->
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/portfolio/tab-2.jpg    1x,
+                        ./images/portfolio/tab-2@2x.jpg 2x
+                      "
+                    />
+
+                    <!--  mobile  -->
+                    <source
+                      media="(max-width:767px)"
+                      srcset="
+                        ./images/portfolio/img-mob-2.jpg    1x,
+                        ./images/portfolio/img-mob@2x-2.jpg 2x
+                      "
+                    />
+
+                    <img
+                      class="img"
+                      src="./images/portfolio/img-mob-2.jpg "
+                      alt="Дврє грають в баскетбол"
+                      width="370"
+                    />
+                  </picture>
                   <p class="overlay">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
                     функціоналу та сервісів. Все це дозволить відвідувачу
@@ -146,7 +209,9 @@
                 </div>
 
                 <div class="projects__border">
-                  <h2 class="projects__name">Постер New Orlean vs Golden Star</h2>
+                  <h2 class="projects__name">
+                    Постер New Orlean vs Golden Star
+                  </h2>
                   <p class="projects__type">Дизайн</p>
                 </div>
               </a>
@@ -155,12 +220,42 @@
             <li class="projects__item project-position">
               <a class="projects__link" href="">
                 <div class="img-bloc">
-                  <img
-                    class="img"
-                    src="./images/p3.jpg"
-                    alt="логотипe seafoot"
-                    width="370"
-                  />
+                  <picture>
+                    <!--  Desk  -->
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/portfolio/desk-3.jpg    1x,
+                        ./images/portfolio/desk-3@2x.jpg 2x
+                      "
+                    />
+
+                    <!--  tablet  -->
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/portfolio/tab-3.jpg    1x,
+                        ./images/portfolio/tab-3@2x.jpg 2x
+                      "
+                    />
+
+                    <!--  mobile  -->
+                    <source
+                      media="(max-width:767px)"
+                      srcset="
+                        ./images/portfolio/img-mob-3.jpg    1x,
+                        ./images/portfolio/img-mob@2x-3.jpg 2x
+                      "
+                    />
+
+                    <img
+                      class="img"
+                      src="./images/portfolio/img-mob-3.jpg "
+                      alt="логотипe seafoot"
+                      width="370"
+                    />
+                  </picture>
+
                   <p class="overlay">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
                     функціоналу та сервісів. Все це дозволить відвідувачу
@@ -178,12 +273,41 @@
             <li class="projects__item project-position">
               <a class="projects__link" href="">
                 <div class="img-bloc">
-                  <img
-                    class="img"
-                    src="./images/p4.jpg"
-                    alt="Гарнітура"
-                    width="370"
-                  />
+                  <picture>
+                    <!--  Desk  -->
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/portfolio/desk-4.jpg    1x,
+                        ./images/portfolio/desk-4@2x.jpg 2x
+                      "
+                    />
+
+                    <!--  tablet  -->
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/portfolio/tab-4.jpg    1x,
+                        ./images/portfolio/tab-4@2x.jpg 2x
+                      "
+                    />
+
+                    <!--  mobile  -->
+                    <source
+                      media="(max-width:767px)"
+                      srcset="
+                        ./images/portfolio/img-mob-4.jpg    1x,
+                        ./images/portfolio/img-mob@2x-4.jpg 2x
+                      "
+                    />
+
+                    <img
+                      class="img"
+                      src="./images/portfolio/img-mob-4.jpg "
+                      alt="Гарнітура"
+                      width="370"
+                    />
+                  </picture>
                   <p class="overlay">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
                     функціоналу та сервісів. Все це дозволить відвідувачу
@@ -201,12 +325,42 @@
             <li class="projects__item project-position">
               <a class="projects__link" href="">
                 <div class="img-bloc">
-                  <img
-                    class="img"
-                    src="./images/p5.jpg"
-                    alt="Дві коробки"
-                    width="370"
-                  />
+                  <picture>
+                    <!--  Desk  -->
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/portfolio/desk-5.jpg    1x,
+                        ./images/portfolio/desk-5@2x.jpg 2x
+                      "
+                    />
+
+                    <!--  tablet  -->
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/portfolio/tab-5.jpg    1x,
+                        ./images/portfolio/tab-5@2x.jpg 2x
+                      "
+                    />
+
+                    <!--  mobile  -->
+                    <source
+                      media="(max-width:767px)"
+                      srcset="
+                        ./images/portfolio/img-mob-5.jpg    1x,
+                        ./images/portfolio/img-mob@2x-5.jpg 2x
+                      "
+                    />
+
+                    <img
+                      class="img"
+                      src="./images/portfolio/img-mob-5.jpg "
+                      alt="Дві коробки"
+                      width="370"
+                    />
+                  </picture>
+
                   <p class="overlay">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
                     функціоналу та сервісів. Все це дозволить відвідувачу
@@ -224,12 +378,42 @@
             <li class="projects__item project-position">
               <a class="projects__link" href="">
                 <div class="img-bloc">
-                  <img
-                    class="img"
-                    src="./images/p6.jpg"
-                    alt="Дисплей"
-                    width="370"
-                  />
+                  <picture>
+                    <!--  Desk  -->
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/portfolio/desk-6.jpg    1x,
+                        ./images/portfolio/desk-6@2x.jpg 2x
+                      "
+                    />
+
+                    <!--  tablet  -->
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/portfolio/tab-6.jpg    1x,
+                        ./images/portfolio/tab-6@2x.jpg 2x
+                      "
+                    />
+
+                    <!--  mobile  -->
+                    <source
+                      media="(max-width:767px)"
+                      srcset="
+                        ./images/portfolio/img-mob-6.jpg    1x,
+                        ./images/portfolio/img-mob@2x-6.jpg 2x
+                      "
+                    />
+
+                    <img
+                      class="img"
+                      src="./images/portfolio/img-mob-6.jpg "
+                      alt="Дисплей"
+                      width="370"
+                    />
+                  </picture>
+
                   <p class="overlay">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
                     функціоналу та сервісів. Все це дозволить відвідувачу
@@ -247,12 +431,41 @@
             <li class="projects__item">
               <a class="projects__link" href="">
                 <div class="img-bloc">
-                  <img
-                    class="img"
-                    src="./images/p7.jpg"
-                    alt="Відкрита книга"
-                    width="370"
-                  />
+                  <picture>
+                    <!--  Desk  -->
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/portfolio/desk-7.jpg    1x,
+                        ./images/portfolio/desk-7@2x.jpg 2x
+                      "
+                    />
+
+                    <!--  tablet  -->
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/portfolio/tab-7.jpg    1x,
+                        ./images/portfolio/tab-7@2x.jpg 2x
+                      "
+                    />
+
+                    <!--  mobile  -->
+                    <source
+                      media="(max-width:767px)"
+                      srcset="
+                        ./images/portfolio/img-mob-7.jpg    1x,
+                        ./images/portfolio/img-mob@2x-7.jpg 2x
+                      "
+                    />
+
+                    <img
+                      class="img"
+                      src="./images/portfolio/img-mob-7.jpg"
+                      alt="Відкрита книга"
+                      width="370"
+                    />
+                  </picture>
                   <p class="overlay">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
                     функціоналу та сервісів. Все це дозволить відвідувачу
@@ -270,12 +483,41 @@
             <li class="projects__item">
               <a class="projects__link" href="">
                 <div class="img-bloc">
-                  <img
-                    class="img"
-                    src="./images/p8.jpg"
-                    alt="Бірка"
-                    width="370"
-                  />
+                  <picture>
+                    <!--  Desk  -->
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/portfolio/desk-8.jpg    1x,
+                        ./images/portfolio/desk-8@2x.jpg 2x
+                      "
+                    />
+
+                    <!--  tablet  -->
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/portfolio/tab-8.jpg    1x,
+                        ./images/portfolio/tab-8@2x.jpg 2x
+                      "
+                    />
+
+                    <!--  mobile  -->
+                    <source
+                      media="(max-width:767px)"
+                      srcset="
+                        ./images/portfolio/img-mob-8.jpg    1x,
+                        ./images/portfolio/img-mob@2x-8.jpg 2x
+                      "
+                    />
+                    <img
+                      class="img"
+                      src="./images/portfolio/img-mob-8.jpg"
+                      alt="Бірка"
+                      width="370"
+                    />
+                  </picture>
+
                   <p class="overlay">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
                     функціоналу та сервісів. Все це дозволить відвідувачу
@@ -293,12 +535,41 @@
             <li class="projects__item">
               <a class="projects__link" href="">
                 <div class="img-bloc">
-                  <img
-                    class="img"
-                    src="./images/p9.jpg"
-                    alt="Хтось працює на лептопі"
-                    width="370"
-                  />
+                  <picture>
+                    <!--  Desk  -->
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/portfolio/desk-9.jpg    1x,
+                        ./images/portfolio/desk-9@2x.jpg 2x
+                      "
+                    />
+
+                    <!--  tablet  -->
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/portfolio/tab-9.jpg    1x,
+                        ./images/portfolio/tab-9@2x.jpg 2x
+                      "
+                    />
+
+                    <!--  mobile  -->
+                    <source
+                      media="(max-width:767px)"
+                      srcset="
+                        ./images/portfolio/img-mob-9.jpg    1x,
+                        ./images/portfolio/img-mob@2x-9.jpg 2x
+                      "
+                    />
+
+                    <img
+                      class="img"
+                      src="./images/portfolio/img-mob-9.jpg"
+                      alt="Хтось працює на лептопі"
+                      width="370"
+                    />
+                  </picture>
 
                   <p class="overlay">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -397,32 +668,49 @@
       </div>
     </footer>
 
-
     <div class="menu-container js-menu-container" id="mobile-menu">
-
-      <button class="menu-btn  menu-toggle js-close-menu">
+      <button class="menu-btn menu-toggle js-close-menu">
         <svg class="menu-btn-icon" width="24" height="24">
-          <use href="./images/icons.svg#icon-close-black" > </use>
+          <use href="./images/icons.svg#icon-close-black"></use>
         </svg>
       </button>
 
       <ul class="menu-nav">
         <li><a class="menu-nav-link" href="./">Студія</a></li>
-        <li><a class="menu-nav-link " href="./portfolio.html" >Портфоліо</a></li>
-        <li><a class="menu-nav-link" href="" >Контакти</a></li>
+        <li>
+          <a class="menu-nav-link menu-nav-link-active" href="./portfolio.html"
+            >Портфоліо</a
+          >
+        </li>
+        <li><a class="menu-nav-link" href="">Контакти</a></li>
       </ul>
 
       <ul class="mobile__list">
-        <li><a class="mobile__list-link" href="tel:+380961111111" >+38 096 111 11 11</a></li>
-        <li><a class="mobile__list-link" href="mailto:info@devstudio.com" >info@devstudio.com</a></li>
-        
+        <li>
+          <a class="mobile__list-link" href="tel:+380961111111"
+            >+38 096 111 11 11</a
+          >
+        </li>
+        <li>
+          <a class="mobile__list-link" href="mailto:info@devstudio.com"
+            >info@devstudio.com</a
+          >
+        </li>
       </ul>
 
       <ul class="menu-social">
-        <li class="menu-social-item"><a class="menu-social-link href=">Instagram</a></li>
-        <li class="menu-social-item"><a class="menu-social-link href=">Twitter</a></li>
-        <li class="menu-social-item"><a class="menu-social-link href=">Facebook</a></li>
-        <li class="menu-social-item"><a class="menu-social-link href=">LinkedIn</a></li>
+        <li class="menu-social-item">
+          <a class="menu-social-link href=">Instagram</a>
+        </li>
+        <li class="menu-social-item">
+          <a class="menu-social-link href=">Twitter</a>
+        </li>
+        <li class="menu-social-item">
+          <a class="menu-social-link href=">Facebook</a>
+        </li>
+        <li class="menu-social-item">
+          <a class="menu-social-link href=">LinkedIn</a>
+        </li>
       </ul>
     </div>
 
@@ -434,7 +722,6 @@
     ></script>
 
     <script defer src="./js/mobile-menu.js"></script>
-
   </body>
 </html>
 

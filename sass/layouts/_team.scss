@@ -49,12 +49,12 @@
 
 
     @media screen and (min_width: 768px) {
-      width: 354px;
+      width: 354px; 
     }
 
 
     @media screen and (min_width: 1200px) {
-      width: 270px;
+      width: 270px; 
     }
     
   }
@@ -62,12 +62,13 @@
 
   .team__photo{
      width: 100%;
+     height: auto;
     @media screen and (min-width:768px){
-        width: 354px;
+        width: 354px; 
     }
 
     @media screen and (min-width:1200px){
-      width: 270px;
+      width: 270px; 
     }
   }
   

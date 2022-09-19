@@ -16,8 +16,7 @@
       rel="stylesheet"
       href="./modern-normalize-main/modern-normalize.css"
     />
-    <link rel="stylesheet" href="./css/main.min.css">
- 
+    <link rel="stylesheet" href="./css/main.min.css" />
   </head>
 
   <body>
@@ -31,7 +30,9 @@
         <nav class="nav">
           <ul class="nav__list">
             <li class="nav__item">
-              <a class="nav__link nav__link--current" href="./index.html">Студія</a>
+              <a class="nav__link nav__link--current" href="./index.html"
+                >Студія</a
+              >
             </li>
 
             <li class="nav__item">
@@ -64,14 +65,16 @@
           </li>
         </ul>
 
-        <button class="menu-btn js-open-menu" type="button" 
+        <button
+          class="menu-btn js-open-menu"
+          type="button"
           aria-expanded="false"
-          aria-controls="mobile-menu">
-          <svg  class="menu-btn-icon" width="40px" height="40px">
+          aria-controls="mobile-menu"
+        >
+          <svg class="menu-btn-icon" width="40px" height="40px">
             <use href="./images/icons.svg#menu"></use>
           </svg>
         </button>
-
       </div>
     </header>
 
@@ -79,7 +82,7 @@
     <main>
       <!-- Hed -->
       <section class="hero section">
-        <div class="container ">
+        <div class="container">
           <h1 class="hero__header">Ефективні рішення для вашого бізнесу</h1>
 
           <button class="btn" type="button" data-modal-open>
@@ -94,7 +97,6 @@
           <h2 class="features__titel">Особливості</h2>
 
           <ul class="features__list">
-
             <li class="features__item">
               <div class="features__box">
                 <svg class="features__icon">
@@ -149,7 +151,6 @@
                 планових завдань.
               </p>
             </li>
-            
           </ul>
         </div>
       </section>
@@ -162,27 +163,48 @@
           <ul class="what-list">
             <li class="img-label">
               <img
+                srcset="
+                  ./images/work/work-1.jpg    370w,
+                  ./images/work/work-1@2x.jpg 740w
+                "
+                sizes="(min-width: 1200px) 370px, 100vw "
                 width="370"
-                src="images/img.jpg"
-                alt="programer-working-his-desk-office"
+                height="294"
+                src="./images/work/work-1.jpg"
+                alt="програміст-працює-за-стальним-офісом"
+                loding="lazy"
               />
               <p class="label">Десктопні додатки</p>
             </li>
 
             <li class="img-label">
               <img
+                srcset="
+                  ./images/work/work-2.jpg    370w,
+                  ./images/work/work-2@2x.jpg 740w
+                "
+                sizes="(min-width: 1200px) 370px, 100vw "
                 width="370"
-                src="images/img1.jpg"
-                alt="web-ui-designers-are-developing-application-smartphones-team-creators-is-working-interface-mobile-phones"
+                height="294"
+                src="./images/work/work-2.jpg"
+                alt="web-ui дизайнери-розробляють-додатки-смартфони-команда-творців-працює-інтерфейс-мобільні-телефони"
+                loding="lazy"
               />
               <p class="label">Мобільні додатки</p>
             </li>
 
             <li class="img-label">
               <img
+                srcset="
+                  ./images/work/work-3.jpg    370w,
+                  ./images/work/work-3@2x.jpg 740w
+                "
+                sizes="(min-width: 1200px) 370px, 100vw "
                 width="370"
-                src="images/img2.jpg"
-                alt="creative-artist-web-design-with-working-colour-selection-graphic-tablet"
+                height="294"
+                src="./images/work/work-3.jpg"
+                alt="творчий художник-веб-дизайн-з-працюючим-вибором-кольору-графічним-планшетом"
+                loding="lazy"
               />
               <label class="label">Дизайнерські рішення</label>
             </li>
@@ -197,7 +219,24 @@
 
           <ul class="teams-list">
             <li class="list-item">
-              <img class="team__photo" src="images/f0img.jpg" alt="man" />
+              <img
+                class="team__photo"
+                srcset="
+                  ./images/team/desk-team-1.jpg    270w,
+                  ./images/team/tab-team-1.jpg     354w,
+                  ./images/team/mob-team-1.jpg     450w,
+                  ./images/team/desk-team-1@2x.jpg 540w,
+                  ./images/team/tab-team-1@2x.jpg  708w,
+                  ./images/team/mob-team-1@2x.jpg  900w
+                "
+                sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw "
+                src="./images/team/mob-team-1.jpg"
+                width="450"
+                height="460"
+                alt="Ігор Дем'яненко"
+                loding="lazy"
+              />
+
               <div class="team-wrapper">
                 <h3 class="person-name">Ігор Дем'яненко</h3>
                 <p class="tech">Product Designer</p>
@@ -231,7 +270,26 @@
             </li>
 
             <li class="list-item">
-              <img class="team__photo" src="images/f1img.jpg" alt="woman" />
+              <img
+                class="team__photo"
+                srcset="
+                  ./images/team/desk-team-2.jpg    270w,
+                  ./images/team/tab-team-2.jpg     354w,
+                  ./images/team/mob-team-2.jpg     450w,
+                  ./images/team/desk-team-2@2x.jpg 540w,
+                  ./images/team/tab-team-2@2x.jpg  708w,
+                  ./images/team/mob-team-2@2x.jpg  900w
+                "
+                sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw "
+                src="./images/team/mob-team-2.jpg"
+                width="450"
+                height="460"
+                src="images/f1img.jpg"
+                width="450"
+                alt="Ольга Рєпіна"
+                loding="lazy"
+              />
+
               <div class="team-wrapper">
                 <h3 class="person-name">Ольга Рєпіна</h3>
                 <p class="tech">Frontend Developer</p>
@@ -265,7 +323,26 @@
             </li>
 
             <li class="list-item">
-              <img class="team__photo" src="images/f2img.jpg" alt="man" />
+              <img
+                class="team__photo"
+                srcset="
+                  ./images/team/desk-team-3.jpg    270w,
+                  ./images/team/tab-team-3.jpg     354w,
+                  ./images/team/mob-team-3.jpg     450w,
+                  ./images/team/desk-team-3@2x.jpg 540w,
+                  ./images/team/tab-team-3@2x.jpg  708w,
+                  ./images/team/mob-team-3@2x.jpg  900w
+                "
+                sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw "
+                src="./images/team/mob-team-3.jpg"
+                width="450"
+                height="460"
+                src="images/f1img.jpg"
+                width="450"
+                alt="Микола Тарасов"
+                loding="lazy"
+              />
+
               <div class="team-wrapper">
                 <h3 class="person-name">Микола Тарасов</h3>
                 <p class="tech">Marketing</p>
@@ -299,7 +376,25 @@
             </li>
 
             <li class="list-item">
-              <img class="team__photo" src="images/f3img.jpg" alt="man" />
+              <img
+                class="team__photo"
+                srcset="
+                  ./images/team/desk-team-4.jpg    270w,
+                  ./images/team/tab-team-4.jpg     354w,
+                  ./images/team/mob-team-4.jpg     450w,
+                  ./images/team/desk-team-4@2x.jpg 540w,
+                  ./images/team/tab-team-4@2x.jpg  708w,
+                  ./images/team/mob-team-4@2x.jpg  900w
+                "
+                sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw "
+                src="./images/team/mob-team-4.jpg"
+                width="450"
+                height="460"
+                src="images/f1img.jpg"
+                width="450"
+                alt="Михайло Єрмаков"
+                loding="lazy"
+              />
               <div class="team-wrapper">
                 <h3 class="person-name">Михайло Єрмаков</h3>
                 <p class="tech">UI Designer</p>
@@ -338,7 +433,6 @@
       <section class="customers section">
         <div class="container">
           <h2 class="customers-header">Постійні клієнти</h2>
-
 
           <ul class="customers__list">
             <li class="customers__item">
@@ -387,11 +481,8 @@
                 </svg>
               </a>
             </li>
-
           </ul>
-
         </div>
-
       </section>
     </main>
 
@@ -404,15 +495,18 @@
           </a>
 
           <address class="link-addres">
-            <a class="addres-com"
-              href="https://www.google.com.ua/maps/@50.4265841,30.5361971,17z?hl=uk">
+            <a
+              class="addres-com"
+              href="https://www.google.com.ua/maps/@50.4265841,30.5361971,17z?hl=uk"
+            >
               м. Київ, пр-т Лесі Українки, 26
             </a>
 
-            <a class="contact" href="mailto:info@devstudio.com">info@devstudio.com</a>
+            <a class="contact" href="mailto:info@devstudio.com"
+              >info@devstudio.com</a
+            >
 
             <a class="contact" href="tel:+380961111111">+38 096 111 11 11</a>
-
           </address>
         </div>
 
@@ -473,38 +567,51 @@
       </div>
     </footer>
 
+    <!-- %%%%%  JS %%%%% -->
 
-    
     <div class="menu-container js-menu-container" id="mobile-menu">
-
-      <button class="menu-btn  menu-toggle js-close-menu">
+      <button class="menu-btn menu-toggle js-close-menu">
         <svg class="menu-btn-icon" width="24" height="24">
-          <use href="./images/icons.svg#icon-close-black" > </use>
+          <use href="./images/icons.svg#icon-close-black"></use>
         </svg>
       </button>
 
       <ul class="menu-nav">
-        <li><a class="menu-nav-link " href="./">Студія</a></li>
-        <li><a class="menu-nav-link" href="./portfolio.html" >Портфоліо</a></li>
-        <li><a class="menu-nav-link" href="" >Контакти</a></li>
+        <li>
+          <a class="menu-nav-link menu-nav-link-active" href="./">Студія</a>
+        </li>
+        <li><a class="menu-nav-link" href="./portfolio.html">Портфоліо</a></li>
+        <li><a class="menu-nav-link" href="">Контакти</a></li>
       </ul>
 
       <ul class="mobile__list">
-        <li><a class="mobile__list-link" href="tel:+380961111111" >+38 096 111 11 11</a></li>
-        <li><a class="mobile__list-link" href="mailto:info@devstudio.com" >info@devstudio.com</a></li>
-        
+        <li>
+          <a class="mobile__list-link" href="tel:+380961111111"
+            >+38 096 111 11 11</a
+          >
+        </li>
+        <li>
+          <a class="mobile__list-link" href="mailto:info@devstudio.com"
+            >info@devstudio.com</a
+          >
+        </li>
       </ul>
 
       <ul class="menu-social">
-        <li class="menu-social-item"><a class="menu-social-link href=">Instagram</a></li>
-        <li class="menu-social-item"><a class="menu-social-link href=">Twitter</a></li>
-        <li class="menu-social-item"><a class="menu-social-link href=">Facebook</a></li>
-        <li class="menu-social-item"><a class="menu-social-link href=">LinkedIn</a></li>
+        <li class="menu-social-item">
+          <a class="menu-social-link href=">Instagram</a>
+        </li>
+        <li class="menu-social-item">
+          <a class="menu-social-link href=">Twitter</a>
+        </li>
+        <li class="menu-social-item">
+          <a class="menu-social-link href=">Facebook</a>
+        </li>
+        <li class="menu-social-item">
+          <a class="menu-social-link href=">LinkedIn</a>
+        </li>
       </ul>
     </div>
-
-
-
 
     <!-- " -->
     <div class="backdrop is-hidden" data-modal>
@@ -588,7 +695,6 @@
 
     <script defer src="./js/modal.js"></script>
     <script defer src="./js/mobile-menu.js"></script>
-
   </body>
 </html>
 

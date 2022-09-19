@@ -75,11 +75,15 @@
     }
 
     &-link:hover,
-    &-link:focus {
+    &-link:active {
         text-align: center;
         color:  var(--brand-color--)  ;
     }
 
+}
+
+.menu-nav-link-active{
+    color:  var(--brand-color--)  ;
 }
 
 

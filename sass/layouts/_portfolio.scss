@@ -21,11 +21,11 @@
     }
 
 
-    &__item:first-child &__border{
-      @media screen and (min-width:768px) and (max-width:1199px){
-        padding-bottom: 56px;
-      }
-    }
+    // &__item:first-child &__border{
+    //   @media screen and (min-width:768px) and (max-width:1199px){
+    //     padding-bottom: 56px;
+    //   }
+    // }
 
     
   }
@@ -35,7 +35,9 @@
 
 
   .projects__link {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
   }
   
   .projects__item {
@@ -96,6 +98,9 @@
     border: 1px solid #eeeeee;
     border-top: none;
     padding: 20px 24px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
   }
 
 
