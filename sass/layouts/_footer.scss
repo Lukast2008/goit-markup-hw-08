@@ -1,133 +1,114 @@
 .footer {
+  background-color: var(--backgrs-color--);
+  margin: 0 auto;
+  @include section();
 
-
-
-  
-    background-color: var(--backgrs-color--);
-    margin: 0 auto;
-    @include section();
-  
-    &-container {
+  &-container {
     text-align: center;
-      
-      @media screen  and (max-width:480px){
-        
-       
-      }
 
-      @media screen  and (min-width:768px) {
-        display: flex;
-        justify-content: space-around;
-        align-items: baseline;
-        flex-wrap: wrap;
-      }
-
-      @media screen  and (min-width:1200px) {
-        flex-wrap: nowrap;
-        align-items: baseline;
-        text-align: left;
-      
-      }
-  
+    @media screen and (max-width: 480px) {
     }
-    
-  }
 
-  .footers-social{
-    @media screen and (max-width:767px){
-      margin-top: 60px;
-    }
-  }
-
-  .link-addres {
-    font-style: normal;
-    display: flex;
-    flex-direction: column;
-    
-    gap: 9px;
-    margin-top: 20px;
-    position: relative;
-  }
-  
-  .addres-com {
-    color: var(--main-color--);
-    font-size: 14px;
-    line-height: 1.71;
-    letter-spacing: 0.03em;
-    text-decoration: none;
-    transition-property: color;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    transition-duration: var(--timing);
-
-    @media screen and (min-width:768px){
-      width: 231px;
-    }
-  }
-  
-  .contact {
-    font-size: 14px;
-    line-height: 1.71;
-    letter-spacing: 0.03em;
-    text-decoration: none;
-    color: #ffffff99;
-    transition-property: color;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    transition-duration: var(--timing);
-  }
-  
-  .addres-com:hover,
-  .addres-com:focus,
-  .contact:hover,
-  .contact:focus {
-    color: var(--brand-color--);
-  }
-  
-  .footers-social {
-
-    @media screen and (min-width:768px) {
+    @media screen and (min-width: 768px) {
+      display: flex;
       justify-content: space-around;
-      margin-left: 165px;
+      align-items: baseline;
+      flex-wrap: wrap;
     }
 
-    @media screen and (min-width:1200px) {
-      margin-left: 70px;
+    @media screen and (min-width: 1200px) {
+      flex-wrap: nowrap;
+      align-items: baseline;
+      text-align: left;
     }
-    
   }
-  
-  .social-header {
-    font-size: 14px;
-    line-height: 1.17;
-    color: var(--main-color--);
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
+}
 
-    @media screen and (min-width:768px) {
-      margin-top: 0;
-      margin-bottom: 20px;
-    }
-    
+.footers-social {
+  @media screen and (max-width: 768px) {
+    margin-top: 60px;
   }
-  
-  .social-link {
-    display: flex;
-    gap: 10px;
-    margin-bottom: 60px;
-    margin-top: 20px;
+}
 
-    @media screen and (max-width:767px){
-      justify-content: center;
-      
-    }
+.link-addres {
+  font-style: normal;
+  display: flex;
+  flex-direction: column;
 
+  gap: 9px;
+  margin-top: 20px;
+  position: relative;
+}
+
+.addres-com {
+  color: var(--main-color--);
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+  transition-property: color;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: var(--timing);
+
+  @media screen and (min-width: 768px) {
+    width: 231px;
   }
-  
-  .link-social {
-    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.contact {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+  color: #ffffff99;
+  transition-property: color;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: var(--timing);
+}
+
+.addres-com:hover,
+.addres-com:focus,
+.contact:hover,
+.contact:focus {
+  color: var(--brand-color--);
+}
+
+.footers-social {
+  @media screen and (min-width: 1200px) {
+    margin-left: 70px;
   }
-  
-  .footer-icon {
-    fill: #fff;
-    width: 20px;
-    height: 20px;
+}
+
+.social-header {
+  font-size: 14px;
+  line-height: 1.17;
+  color: var(--main-color--);
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  @media screen and (min-width: 768px) {
+    margin-top: 0;
+    margin-bottom: 20px;
   }
+}
+
+.social-link {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 60px;
+  margin-top: 20px;
+
+  @media screen and (max-width: 768px) {
+    justify-content: center;
+  }
+}
+
+.link-social {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.footer-icon {
+  fill: #fff;
+  width: 20px;
+  height: 20px;
+}

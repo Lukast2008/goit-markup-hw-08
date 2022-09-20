@@ -1,119 +1,108 @@
 .contacts {
-
   display: none;
 
-  @media screen and(min-width:768px)  {
+  @media screen and(min-width:768px) {
     display: flex;
     flex-direction: column;
     margin-left: auto;
-    
   }
 
-  @media screen and(min-width:1200px){
+  @media screen and(min-width:1200px) {
     display: flex;
-    flex-direction:row;
+    flex-direction: row;
     margin-left: auto;
     gap: 50px;
   }
- 
- 
 }
 
 .contacts__item {
-    list-style: none;
-    display: flex;
+  list-style: none;
+  display: flex;
+}
 
-  }
-  
-  .contacts__mail{
+.contacts__mail {
+  font-weight: 500;
+  line-height: 1.172;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  color: var(--description-color--);
 
-    font-weight: 500;
-    line-height: 1.172;
-    letter-spacing: 0.02em;
-    text-decoration: none;
-    color: var(--description-color--);  
-
-    display: flex;
-    align-items: center;
-    transition-property: color, fill;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    transition-duration: var(--timing);
-    font-size: 12px; 
-    @media screen and (min-width:768px) {
-      
-      
-    }
-
-    @media screen and (min-width:768px) and (max-width:1199px){
-      margin-bottom: 10px;
-    }
-
-
-    @media screen and (min-width:1200px) {
-      font-size: 14px;  
-      padding: 32px 0;
-    }
+  display: flex;
+  align-items: center;
+  transition-property: color, fill;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: var(--timing);
+  font-size: 12px;
+  @media screen and (min-width: 768px) {
   }
 
-  .contacts__icon {
-    width:14px;
-    height: 10px;
-    margin-right: 10px;
-    fill: var(--description-color--);
-    transition-property: color, fill;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    transition-duration: var(--timing);
-    
-    @media screen and (min-width:1200px) {
-      width: 16px;
-      height: 12px;
-    }  
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    margin-bottom: 10px;
+  }
 
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+    padding: 32px 0;
   }
-  
-  .contacts__mail:hover .contacts__icon,
-  .contacts__mail:focus .contacts__icon {
-    fill: var(--brand-color--);
-  }
-  
-  .contacts__phone{
-    
-    font-weight: 500;
-    line-height: 1.17;
-    letter-spacing: 0.02em;
-    text-decoration: none;
-    color: var(--description-color--);
-    font-size: 12px;
-    display: flex;
-    align-items: center;
-    transition-property: color, fill;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    transition-duration: var(--timing);
+}
 
-    @media screen and (min-width:1200px) {
-      padding: 32px 0;
-      font-size: 14px;
-    }
+.contacts__icon {
+  width: 14px;
+  height: 10px;
+  margin-right: 10px;
+  fill: var(--description-color--);
+  transition-property: color, fill;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: var(--timing);
+
+  @media screen and (min-width: 1200px) {
+    width: 16px;
+    height: 12px;
   }
-  
-  .icon-f {
+}
+
+.contacts__mail:hover .contacts__icon,
+.contacts__mail:focus .contacts__icon {
+  fill: var(--brand-color--);
+}
+
+.contacts__phone {
+  font-weight: 500;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  color: var(--description-color--);
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  transition-property: color, fill;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: var(--timing);
+
+  @media screen and (min-width: 1200px) {
+    padding: 32px 0;
+    font-size: 14px;
+  }
+}
+
+.icon-f {
+  width: 10px;
+  height: 14px;
+
+  @media screen and (min-width: 1200px) {
     width: 10px;
-    height: 14px;
+    height: 16px;
+  }
+}
 
-    @media screen and (min-width:1200px) {
-      width: 10px;
-      height: 16px;
-    }
-  }
-  
-  .contacts__phone:focus .icon-f,
-  .contacts__phone:hover .icon-f {
-    fill: var(--brand-color--);
-  }
-  
-  .contacts__mail:hover,
-  .contacts__mail:focus,
-  .contacts__phone:hover,
-  .contacts__phone:focus {
-    color: var(--brand-color--);
-  }
+.contacts__phone:focus .icon-f,
+.contacts__phone:hover .icon-f {
+  fill: var(--brand-color--);
+}
+
+.contacts__mail:hover,
+.contacts__mail:focus,
+.contacts__phone:hover,
+.contacts__phone:focus {
+  color: var(--brand-color--);
+}

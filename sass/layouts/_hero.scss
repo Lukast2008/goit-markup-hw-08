@@ -1,76 +1,94 @@
 .hero {
+  margin: 0 auto;
+  background-color: var(--backgrs-color--);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  max-width: 1600px;
+  @include section(118px, 118px);
 
-    margin: 0 auto;
-    background-color: var(--backgrs-color--);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    max-width: 1600px;
-    @include section(118px, 118px);
-
-    background-image: linear-gradient(to right,rgb(47, 48, 58, 0.4), rgb(47, 48, 58, 0.4) ),      
+  background-image: linear-gradient(
+      to right,
+      rgb(47, 48, 58, 0.4),
+      rgb(47, 48, 58, 0.4)
+    ),
     url(../images/bg/bg-1.jpg);
-    
-   
-     
-    @media (min-device-pixel-ratio: 2),(min-resolution: 192dpi),(min-resolution: 2dppx) {
-        background-image: linear-gradient(to right,rgb(47, 48, 58, 0.4), rgb(47, 48, 58, 0.4) ), url(../images/bg/bg-1@2x.jpg);     
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: linear-gradient(
+        to right,
+        rgb(47, 48, 58, 0.4),
+        rgb(47, 48, 58, 0.4)
+      ),
+      url(../images/bg/bg-1@2x.jpg);
+  }
+
+  @media screen and (min-width: 481px) {
+    background-image: linear-gradient(
+        to right,
+        rgb(47, 48, 58, 0.4),
+        rgb(47, 48, 58, 0.4)
+      ),
+      url(../images/bg/bg-2.jpg);
+
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: linear-gradient(
+          to right,
+          rgb(47, 48, 58, 0.4),
+          rgb(47, 48, 58, 0.4)
+        ),
+        url(../images/bg/bg-2@2x.jpg);
     }
-        
-    @media screen and (min-width:481px) {
-        background-image: linear-gradient ( to right, rgb(47, 48, 58, 0.4), rgb(47, 48, 58, 0.4) ), 
-        url(../images/bg/bg-2.jpg);
-        
-        @media (min-device-pixel-ratio: 2),(min-resolution: 192dpi),(min-resolution: 2dppx) {
-            background-image: linear-gradient(to right,rgb(47, 48, 58, 0.4), rgb(47, 48, 58, 0.4) ), url(../images/bg/bg-2@2x.jpg);      
-        }
-    }  
+  }
 
-    
-    @media screen and(min-width:769px){
+  @media screen and(min-width:769px) {
+    background-image: linear-gradient(
+        to right,
+        rgb(47, 48, 58, 0.4),
+        rgb(47, 48, 58, 0.4)
+      ),
+      url(../images/bg/bg-3.jpg);
 
-        
-
-        background-image: linear-gradient( to right, rgb(47, 48, 58, 0.4), rgb(47, 48, 58, 0.4) ), 
-        url(../images/bg/bg-3.jpg);
-
-        @media (min-device-pixel-ratio: 2),(min-resolution: 192dpi),(min-resolution: 2dppx) {
-
-            background-image: linear-gradient(to right,rgb(47, 48, 58, 0.4), rgb(47, 48, 58, 0.4) ), url(../images/bg/bg-3@2x.jpg);     
-            
-        }
-    } 
-
-    @media screen and (min-width:1200px) {
-        @include section(200px, 200px);
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: linear-gradient(
+          to right,
+          rgb(47, 48, 58, 0.4),
+          rgb(47, 48, 58, 0.4)
+        ),
+        url(../images/bg/bg-3@2x.jpg);
     }
-    
-    
-    &__header {
-        display: block;
-        font-size: 26px;
-        font-weight: 900;
-        line-height: 1.62;
-        letter-spacing: 0.06em;
-        text-align: center;
-        color: var(--main-color--);
-        text-transform: uppercase;
-        margin: 0 auto;
-        margin-bottom: 30px;
-        
+  }
 
-        @media screen and(min-width:768px){
-            width: 360px;
-        }
-        
-        @media screen and(min-width:1200px){
-            font-size: 44px;
-            line-height: 1.36;
-            width: 696px;
+  @media screen and (min-width: 1200px) {
+    @include section(200px, 200px);
+  }
 
-        }  
-        
-    }    
+  &__header {
+    display: block;
+    font-size: 26px;
+    font-weight: 900;
+    line-height: 1.62;
+    letter-spacing: 0.06em;
+    text-align: center;
+    color: var(--main-color--);
+    text-transform: uppercase;
+    margin: 0 auto;
+    margin-bottom: 30px;
 
+    @media screen and(min-width:768px) {
+      width: 360px;
+    }
+
+    @media screen and(min-width:1200px) {
+      font-size: 44px;
+      line-height: 1.36;
+      width: 696px;
+    }
+  }
 }
-
