@@ -6,11 +6,12 @@
     background-position: center;
     background-size: cover;
     max-width: 1600px;
+    @include section(118px, 118px);
 
     background-image: linear-gradient(to right,rgb(47, 48, 58, 0.4), rgb(47, 48, 58, 0.4) ),      
     url(../images/bg/bg-1.jpg);
     
-    @include section(118px, 118px);
+   
      
     @media (min-device-pixel-ratio: 2),(min-resolution: 192dpi),(min-resolution: 2dppx) {
         background-image: linear-gradient(to right,rgb(47, 48, 58, 0.4), rgb(47, 48, 58, 0.4) ), url(../images/bg/bg-1@2x.jpg);     
@@ -24,10 +25,11 @@
             background-image: linear-gradient(to right,rgb(47, 48, 58, 0.4), rgb(47, 48, 58, 0.4) ), url(../images/bg/bg-2@2x.jpg);      
         }
     }  
+
     
     @media screen and(min-width:769px){
 
-        @include section(200px, 200px);
+        
 
         background-image: linear-gradient( to right, rgb(47, 48, 58, 0.4), rgb(47, 48, 58, 0.4) ), 
         url(../images/bg/bg-3.jpg);
@@ -38,6 +40,10 @@
             
         }
     } 
+
+    @media screen and (min-width:1200px) {
+        @include section(200px, 200px);
+    }
     
     
     &__header {
